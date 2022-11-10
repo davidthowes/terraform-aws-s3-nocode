@@ -15,7 +15,6 @@ provider "aws" {
 # Configure the S3 bucket
 resource "aws_s3_bucket" "b" {
   bucket        = var.bucket_name
-  bucket_prefix = var.prefix_name
 
   tags = {
     Name        = "My bucket"
