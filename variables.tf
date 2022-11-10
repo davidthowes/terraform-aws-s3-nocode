@@ -8,8 +8,8 @@ variable "bucket_name" {
   type        = string
 }
 
-variable "prefix_name" {
-  description = "(Optional, Forces new resource) Creates a unique bucket name beginning with the specified prefix. Conflicts with bucket."
+variable "unused_variable" {
+  description = "Variables won't be showed in no-code unless they are required, savvy users could still access them though."
   type        = string
   default     = "jdgh2178e53udh7"
 }
