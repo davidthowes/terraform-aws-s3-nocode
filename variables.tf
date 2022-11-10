@@ -4,7 +4,7 @@ variable "region" {
 }
 
 variable "bucket_name" {
-  description = "The name of the bucket. If null, Terraform will assign a random, unique name."
+  description = "The name of the bucket. If null, Terraform will assign a random, unique name"
   type        = string
 }
 
