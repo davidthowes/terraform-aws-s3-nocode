@@ -55,9 +55,15 @@ resource "aws_instance" "web" {
       error_message = "The selected AMI must be for the x86_64 architecture."
     }
     
-    postcondition {
+    precondition {
       condition     = self.instance_type == "t3.micro"
       error_message = "EC2 instance must be a t3.micro so that I can give this demo."
+    }
+
+    # The EC2 instance must be allocated a public DNS hostname.
+    postcondition {
+      condition     = self.public_dns != ""
+      error_message = "EC2 instance must be in a VPC that has public DNS hostnames enabled."
     }
   }
 }
