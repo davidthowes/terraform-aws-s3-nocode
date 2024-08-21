@@ -59,4 +59,5 @@ resource "aws_instance" "web" {
       condition     = self.instance_type == "t3.micro"
       error_message = "EC2 instance must be a t3.micro so that I can give this demo."
     }
+  }
 }
