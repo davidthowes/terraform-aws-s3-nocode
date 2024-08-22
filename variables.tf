@@ -13,3 +13,9 @@ variable "unused_variable" {
   type        = string
   default     = "jdgh2178e53udh7"
 }
+
+variable "architecture" {
+  description = "CPU Architecture"
+  type        = string
+  default     = "x86_64"
+}
