@@ -19,8 +19,3 @@ variable "architecture" {
   type        = string
   default     = "x86_64"
 }
-
-variable "random_input" {
-  description = "This is a random required string"
-  type        = string
-}
